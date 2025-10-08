@@ -1,103 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Skills - Your Name</title>
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
     <div class="container">
-        <aside class="sidebar">
-            <div class="sidebar-header">
-                <h1>Your Name</h1>
-                <p>Computer Science Student</p>
-                <p>Building innovative solutions for tomorrow</p>
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <h1>Your Name</h1>
+          <p>Computer Science Student</p>
+          <p>Building innovative solutions for tomorrow</p>
+        </div>
+        <nav class="sidebar-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="skills.html" class="active">Skills</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="advocacy.html">Advocacy</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+          </ul>
+        </nav>
+        <div class="sidebar-footer">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fas fa-envelope"></i></a>
+        </div>
+      </aside>
+      <main class="main-content">
+        <button
+          class="mobile-nav-toggle"
+          aria-controls="sidebar"
+          aria-expanded="false"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <section class="skills-section">
+          <h2 class="section-title">Skills</h2>
+          <p class="section-description">
+            A comprehensive overview of my technical skills, programming
+            languages, frameworks, and tools I use to build modern web
+            applications.
+          </p>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h3>Programming Languages</h3>
+              <ul>
+                <li>JavaScript (ES6+)</li>
+                <li>TypeScript</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>C++</li>
+                <li>SQL</li>
+              </ul>
             </div>
-            <nav class="sidebar-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="education.html">Education</a></li>
-                    <li><a href="experience.html">Experience</a></li>
-                    <li><a href="skills.html" class="active">Skills</a></li>
-                    <li><a href="certifications.html">Certifications</a></li>
-                    <li><a href="advocacy.html">Advocacy</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                </ul>
-            </nav>
-            <div class="sidebar-footer">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fas fa-envelope"></i></a>
+            <div class="skill-category">
+              <h3>Frontend Development</h3>
+              <ul>
+                <li>React</li>
+                <li>Next.js</li>
+                <li>Tailwind CSS</li>
+                <li>HTML5 & CSS3</li>
+                <li>Redux</li>
+                <li>Vue.js</li>
+              </ul>
             </div>
-        </aside>
-        <main class="main-content">
-            <section class="skills-section">
-                <h2 class="section-title">Skills</h2>
-                <p class="section-description">
-                    A comprehensive overview of my technical skills, programming languages,
-                    frameworks, and tools I use to build modern web applications.
-                </p>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>Programming Languages</h3>
-                        <ul>
-                            <li>JavaScript (ES6+)</li>
-                            <li>TypeScript</li>
-                            <li>Python</li>
-                            <li>Java</li>
-                            <li>C++</li>
-                            <li>SQL</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Frontend Development</h3>
-                        <ul>
-                            <li>React</li>
-                            <li>Next.js</li>
-                            <li>Tailwind CSS</li>
-                            <li>HTML5 & CSS3</li>
-                            <li>Redux</li>
-                            <li>Vue.js</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Backend Development</h3>
-                        <ul>
-                            <li>Node.js</li>
-                            <li>Express.js</li>
-                            <li>MongoDB</li>
-                            <li>PostgreSQL</li>
-                            <li>Django</li>
-                            <li>GraphQL</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Tools & Technologies</h3>
-                        <ul>
-                            <li>Git & GitHub</li>
-                            <li>Docker</li>
-                            <li>AWS</li>
-                            <li>Vercel</li>
-                            <li>Figma</li>
-                            <li>VS Code</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Professional Skills</h3>
-                        <ul>
-                            <li>Agile/Scrum methodologies</li>
-                            <li>Test-Driven Development (TDD)</li>
-                            <li>CI/CD pipelines</li>
-                            <li>RESTful API design</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-        </main>
+            <div class="skill-category">
+              <h3>Backend Development</h3>
+              <ul>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>MongoDB</li>
+                <li>PostgreSQL</li>
+                <li>Django</li>
+                <li>GraphQL</li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h3>Tools & Technologies</h3>
+              <ul>
+                <li>Git & GitHub</li>
+                <li>Docker</li>
+                <li>AWS</li>
+                <li>Vercel</li>
+                <li>Figma</li>
+                <li>VS Code</li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h3>Professional Skills</h3>
+              <ul>
+                <li>Agile/Scrum methodologies</li>
+                <li>Test-Driven Development (TDD)</li>
+                <li>CI/CD pipelines</li>
+                <li>RESTful API design</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
-</body>
-</html>```
-
+  </body>
+</html>
+```
