@@ -1,0 +1,95 @@
+/* Education Page Specific Styles */
+
+.gpa {
+  display: inline-block;
+  background-color: var(--dark-green);
+  color: var(--text-white);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  margin-bottom: var(--spacing-md);
+  font-weight: 600;
+}
+
+.gpa i {
+  color: var(--light-green);
+  margin-right: 0.5rem;
+}
+
+.education-details h5,
+.coursework h5 {
+  color: var(--primary-green);
+  margin-bottom: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+}
+
+.coursework-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-sm);
+}
+
+.coursework-list li {
+  color: var(--text-gray);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.coursework-list li i {
+  color: var(--primary-green);
+  font-size: 0.8rem;
+}
+
+.achievement-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+/* Additional Education */
+.additional-education {
+  margin-top: var(--spacing-2xl);
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.education-card {
+  background-color: var(--medium-gray);
+  padding: var(--spacing-lg);
+  border-radius: 8px;
+  border-top: 3px solid var(--primary-green);
+}
+
+.education-card i {
+  font-size: 2.5rem;
+  color: var(--primary-green);
+  margin-bottom: var(--spacing-md);
+}
+
+.education-card h3 {
+  color: var(--text-white);
+  margin-bottom: var(--spacing-md);
+}
+
+.education-card ul {
+  list-style: none;
+  color: var(--text-gray);
+}
+
+.education-card ul li {
+  margin-bottom: var(--spacing-xs);
+  padding-left: var(--spacing-md);
+  position: relative;
+}
+
+.education-card ul li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: var(--primary-green);
+}

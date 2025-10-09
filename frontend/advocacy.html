@@ -3,60 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advocacy - Your Name</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Advocacy</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/advocacy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <aside class="sidebar">
-            <div class="sidebar-header">
-                <h1>Luke Valdez</h1>
-                <p>Computer Science Student</p>
-                <p>Building innovative solutions for tomorrow</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <span>Luke Valdez</span>
             </div>
-            <nav class="sidebar-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="education.html">Education</a></li>
-                    <li><a href="experience.html">Experience</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="certifications.html">Certifications</a></li>
-                    <li><a href="advocacy.html" class="active">Advocacy</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                </ul>
-            </nav>
-            <div class="sidebar-footer">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fas fa-envelope"></i></a>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="advocacy.html" class="active">Advocacy</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/placeholder.svg?height=400&width=1920');">
+        <div class="container">
+            <div class="page-hero-content fade-in">
+                <h1><i class="fas fa-hands-helping"></i> Advocacy</h1>
+                <p>Community involvement and giving back to tech</p>
             </div>
-        </aside>
-        <main class="main-content">
-          <button class="mobile-nav-toggle" aria-controls="sidebar" aria-expanded="false">
-        <i class="fa-solid fa-bars"></i>
-    </button>
-            <section class="advocacy-section">
-                <h2 class="section-title">Advocacy</h2>
-                <p class="section-description">
-                    My commitment to giving back to the tech community through mentorship, open
-                    source contributions, and initiatives that promote diversity and accessibility in
-                    technology.
-                </p>
-                <div class="advocacy-content">
-                    <h3>Community Leadership</h3>
-                    <p>President, Computer Science Club</p>
-                    <h3>Volunteer Coding Instructor</h3>
-                    <p>Code for Good</p>
-                    <h3>Open Source Contributions</h3>
-                    <p>Active Contributor</p>
-                    <h3>Diversity & Inclusion Initiatives</h3>
-                    <p>Women in Tech Advocate</p>
-                    <h3>Accessibility Champion</h3>
+        </div>
+    </section>
+
+    <!-- Advocacy Content -->
+    <section class="content-section">
+        <div class="container">
+            <!-- Community Leadership -->
+            <div class="advocacy-category fade-in">
+                <h2 class="section-subtitle">
+                    <i class="fas fa-users"></i> Community Involvement
+                </h2>
+                <div class="advocacy-grid">
+                    <div class="advocacy-card">
+                        <div class="advocacy-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>Member, Association of Computing Machinery</h3>
+                        <p class="advocacy-org"><i class="fas fa-university"></i> FEU Institute of Technology</p>
+                        <p class="advocacy-date"><i class="fas fa-calendar"></i> 2022 - Present</p>
+                        <p class="advocacy-desc">
+                            Leading a student organization of 150+ members, organizing weekly coding workshops, 
+                            hackathons, and tech talks. Increased club membership by 60% and established 
+                            partnerships with local tech companies.
+                        </p>
+                        
+                        </div>
+                    </div>
                 </div>
-            </section>
-        </main>
-    </div>
-    <script src="./js/script.js"></script>
+            </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Luke Dainiel D. Valdez. All rights reserved.</p>
+            <p>Built with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,243 @@
+/* Advocacy Page Specific Styles */
+
+.advocacy-category {
+  margin-bottom: var(--spacing-2xl);
+}
+
+.advocacy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.advocacy-card {
+  background-color: var(--medium-gray);
+  padding: var(--spacing-lg);
+  border-radius: 8px;
+  border-top: 3px solid var(--primary-green);
+}
+
+.advocacy-icon {
+  font-size: 2.5rem;
+  color: var(--primary-green);
+  margin-bottom: var(--spacing-md);
+}
+
+.advocacy-card h3 {
+  color: var(--text-white);
+  margin-bottom: var(--spacing-sm);
+  font-size: 1.3rem;
+}
+
+.advocacy-org,
+.advocacy-date {
+  color: var(--text-gray);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.advocacy-org i,
+.advocacy-date i {
+  color: var(--primary-green);
+  margin-right: 0.5rem;
+}
+
+.advocacy-desc {
+  color: var(--text-gray);
+  line-height: 1.8;
+  margin-bottom: var(--spacing-md);
+}
+
+.advocacy-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-sm);
+}
+
+.advocacy-list li {
+  color: var(--text-gray);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.advocacy-list li i {
+  color: var(--primary-green);
+  font-size: 0.8rem;
+}
+
+.advocacy-achievements {
+  display: flex;
+  justify-content: space-around;
+  margin-top: var(--spacing-md);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--light-gray);
+}
+
+.achievement-stat {
+  text-align: center;
+}
+
+.achievement-stat i {
+  font-size: 1.5rem;
+  color: var(--primary-green);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.achievement-stat span {
+  color: var(--text-light-gray);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Open Source Stats */
+.opensource-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+.stat-card {
+  background-color: var(--medium-gray);
+  padding: var(--spacing-lg);
+  border-radius: 8px;
+  text-align: center;
+  border: 2px solid transparent;
+  transition: all var(--transition-normal);
+}
+
+.stat-card:hover {
+  border-color: var(--primary-green);
+  transform: translateY(-5px);
+}
+
+.stat-card i {
+  font-size: 2.5rem;
+  color: var(--primary-green);
+  margin-bottom: var(--spacing-sm);
+}
+
+.stat-card h3 {
+  font-size: 2.5rem;
+  color: var(--text-white);
+  margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+  color: var(--text-gray);
+}
+
+.opensource-projects {
+  background-color: var(--medium-gray);
+  padding: var(--spacing-lg);
+  border-radius: 8px;
+}
+
+.opensource-projects h3 {
+  color: var(--text-white);
+  margin-bottom: var(--spacing-md);
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.project-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background-color: var(--light-gray);
+  border-radius: 8px;
+}
+
+.project-item i {
+  font-size: 1.5rem;
+  color: var(--primary-green);
+  flex-shrink: 0;
+}
+
+.project-item h4 {
+  color: var(--text-white);
+  margin-bottom: 0.5rem;
+}
+
+.project-item p {
+  color: var(--text-gray);
+}
+
+/* Speaking & Writing */
+.speaking-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.speaking-card {
+  background-color: var(--medium-gray);
+  padding: var(--spacing-lg);
+  border-radius: 8px;
+  border-left: 3px solid var(--primary-green);
+}
+
+.speaking-card i {
+  font-size: 2rem;
+  color: var(--primary-green);
+  margin-bottom: var(--spacing-md);
+}
+
+.speaking-card h3 {
+  color: var(--text-white);
+  margin-bottom: var(--spacing-md);
+}
+
+.speaking-card ul {
+  list-style: none;
+}
+
+.speaking-card ul li {
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.speaking-card ul li:last-child {
+  border-bottom: none;
+}
+
+.speaking-card strong {
+  color: var(--text-white);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.speaking-card span {
+  color: var(--primary-green);
+  font-size: 0.9rem;
+}
+
+/* Responsive Design - Advocacy */
+@media (max-width: 768px) {
+  .advocacy-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .speaking-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .opensource-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .opensource-stats {
+    grid-template-columns: 1fr;
+  }
+}

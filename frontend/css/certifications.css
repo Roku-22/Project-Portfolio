@@ -1,0 +1,136 @@
+/* Certifications Page Specific Styles */
+
+.certifications-category {
+  margin-bottom: var(--spacing-2xl);
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.certification-card {
+  background-color: var(--medium-gray);
+  padding: var(--spacing-lg);
+  border-radius: 8px;
+  border: 2px solid transparent;
+  transition: all var(--transition-normal);
+}
+
+.certification-card:hover {
+  border-color: var(--primary-green);
+  transform: translateY(-5px);
+}
+
+.cert-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-md);
+}
+
+.cert-icon {
+  font-size: 2.5rem;
+  color: var(--primary-green);
+}
+
+.cert-badge {
+  font-size: 1.5rem;
+  color: var(--light-green);
+}
+
+.certification-card h3 {
+  color: var(--text-white);
+  margin-bottom: var(--spacing-sm);
+  font-size: 1.3rem;
+}
+
+.cert-issuer,
+.cert-date,
+.cert-id {
+  color: var(--text-gray);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.cert-issuer i,
+.cert-date i,
+.cert-id i {
+  color: var(--primary-green);
+  margin-right: 0.5rem;
+}
+
+.cert-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+  margin: var(--spacing-md) 0;
+}
+
+.cert-skill-tag {
+  background-color: var(--light-gray);
+  color: var(--text-light-gray);
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.85rem;
+}
+
+.cert-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary-green);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color var(--transition-fast);
+}
+
+.cert-link:hover {
+  color: var(--light-green);
+}
+
+/* Training Programs */
+.training-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.training-item {
+  display: flex;
+  gap: var(--spacing-md);
+  background-color: var(--medium-gray);
+  padding: var(--spacing-lg);
+  border-radius: 8px;
+  border-left: 3px solid var(--primary-green);
+}
+
+.training-icon {
+  font-size: 2.5rem;
+  color: var(--primary-green);
+  flex-shrink: 0;
+}
+
+.training-content h3 {
+  color: var(--text-white);
+  margin-bottom: var(--spacing-sm);
+}
+
+.training-org,
+.training-date {
+  color: var(--text-gray);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.training-org i,
+.training-date i {
+  color: var(--primary-green);
+  margin-right: 0.5rem;
+}
+
+.training-desc {
+  color: var(--text-gray);
+  line-height: 1.8;
+}
