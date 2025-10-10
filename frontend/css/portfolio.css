@@ -1,4 +1,3 @@
-/* Portfolio Page Specific Styles */
 
 .portfolio-filter {
   background-color: var(--dark-gray);
@@ -149,7 +148,6 @@
   color: var(--primary-green);
 }
 
-/* Responsive Design - Portfolio */
 @media (max-width: 768px) {
   .portfolio-grid {
     grid-template-columns: 1fr;

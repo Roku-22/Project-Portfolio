@@ -1,4 +1,3 @@
-/* Advocacy Page Specific Styles */
 
 .advocacy-category {
   margin-bottom: var(--spacing-2xl);
@@ -92,7 +91,6 @@
   font-weight: 600;
 }
 
-/* Open Source Stats */
 .opensource-stats {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -171,7 +169,6 @@
   color: var(--text-gray);
 }
 
-/* Speaking & Writing */
 .speaking-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -221,7 +218,6 @@
   font-size: 0.9rem;
 }
 
-/* Responsive Design - Advocacy */
 @media (max-width: 768px) {
   .advocacy-grid {
     grid-template-columns: 1fr;

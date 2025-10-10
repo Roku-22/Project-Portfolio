@@ -1,4 +1,3 @@
-/* Certifications Page Specific Styles */
 
 .certifications-category {
   margin-bottom: var(--spacing-2xl);
@@ -90,7 +89,6 @@
   color: var(--light-green);
 }
 
-/* Training Programs */
 .training-list {
   display: flex;
   flex-direction: column;

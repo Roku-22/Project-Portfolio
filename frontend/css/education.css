@@ -1,4 +1,3 @@
-/* Education Page Specific Styles */
 
 .gpa {
   display: inline-block;
@@ -47,7 +46,6 @@
   gap: var(--spacing-sm);
 }
 
-/* Additional Education */
 .additional-education {
   margin-top: var(--spacing-2xl);
 }
